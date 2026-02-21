@@ -13,7 +13,7 @@ app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://savara-teachers-project.vercel.app"
+            "https://sparkly-dusk-042f5e.netlify.app/",
         ],
         credentials: true, // allow cookies or authorization headers
         methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
