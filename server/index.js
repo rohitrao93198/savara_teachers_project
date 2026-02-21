@@ -8,15 +8,19 @@ import teacherRoutes from "./routes/teacher.routes.js";
 
 const app = express();
 
+// ✅ CORS setup
 app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://savara-teachers-project.vercel.app",
+            "https://savara-teachers-project.vercel.app"
         ],
-        credentials: true,
+        credentials: true, // allow cookies or authorization headers
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
     })
 );
+
 app.use(express.json());
 
 connectDB();
