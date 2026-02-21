@@ -11,7 +11,7 @@ const app = express();
 // ✅ CORS setup
 const allowedOrigins = [
     "http://localhost:5173", // dev
-    "https://sparkly-dusk-042f5e.netlify.app", // Netlify frontend URL
+    "https://savraproject.netlify.app/", // Netlify frontend URL
 ];
 
 app.use(cors({
